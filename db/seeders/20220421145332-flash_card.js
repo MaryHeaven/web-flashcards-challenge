@@ -19,7 +19,7 @@ module.exports = {
     for (let i = 0; i < arrQuestionKino.length; i += 1) {
       await queryInterface.bulkInsert('themes', [{
         question: arrQuestionKino[i],
-        answer: arrQuestionKino[i],
+        answer: arrAnswerKino[i],
         theme_name: 'Кино',
         createdAt: new Date(),
         updatedAt: new Date(),
@@ -33,7 +33,7 @@ module.exports = {
     for (let i = 0; i < arrQuestionBrain.length; i += 1) {
       await queryInterface.bulkInsert('themes', [{
         question: arrQuestionBrain[i],
-        answer: arrQuestionBrain[i],
+        answer: arrAnswerBrain[i],
         theme_name: 'Общие Знания',
         createdAt: new Date(),
         updatedAt: new Date(),
@@ -47,7 +47,7 @@ module.exports = {
     for (let i = 0; i < arrQuestionGameOfThrones.length; i += 1) {
       await queryInterface.bulkInsert('themes', [{
         question: arrQuestionGameOfThrones[i],
-        answer: arrQuestionGameOfThrones[i],
+        answer: arrAnswerGameOfThrones[i],
         theme_name: 'Игра Престолов',
         createdAt: new Date(),
         updatedAt: new Date(),
