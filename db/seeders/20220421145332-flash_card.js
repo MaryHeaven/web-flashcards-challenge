@@ -11,15 +11,44 @@ module.exports = {
      *   name: 'John Doe',
      *   isBetaMember: false
      * }], {});
-    */
-    const questionWords = await fs.readFile(path.join(process.env.PWD, 'db', 'themas', 'question.txt'), 'utf-8');
-    const arrQuestionWord = questionWords.split('\n');
-    const answerWords = await fs.readFile(path.join(process.env.PWD, 'db', 'themas', 'answer.txt'), 'utf-8');
-    const arrAnswerWord = answerWords.split('\n');
-    for (let i = 0; i < arrQuestionWord.length; i += 1) {
+     */
+    const questionKino = await fs.readFile(path.join(process.env.PWD, 'db', 'themes', 'kino', 'question.txt'), 'utf-8');
+    const arrQuestionKino = questionKino.split('\n').filter((el) => el.length > 1);
+    const answerKino = await fs.readFile(path.join(process.env.PWD, 'db', 'themes', 'kino', 'answer.txt'), 'utf-8');
+    const arrAnswerKino = answerKino.split('\n').filter((el) => el.length > 1);
+    for (let i = 0; i < arrQuestionKino.length; i += 1) {
       await queryInterface.bulkInsert('themes', [{
-        question: arrQuestionWord[i],
-        answer: arrAnswerWord[i],
+        question: arrQuestionKino[i],
+        answer: arrQuestionKino[i],
+        theme_name: 'Кино',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      }], {});
+    }
+
+    const questionBrain = await fs.readFile(path.join(process.env.PWD, 'db', 'themes', 'brains', 'question.txt'), 'utf-8');
+    const arrQuestionBrain = questionBrain.split('\n').filter((el) => el.length > 1);
+    const answerBrain = await fs.readFile(path.join(process.env.PWD, 'db', 'themes', 'brains', 'answer.txt'), 'utf-8');
+    const arrAnswerBrain = answerBrain.split('\n').filter((el) => el.length > 1);
+    for (let i = 0; i < arrQuestionBrain.length; i += 1) {
+      await queryInterface.bulkInsert('themes', [{
+        question: arrQuestionBrain[i],
+        answer: arrQuestionBrain[i],
+        theme_name: 'Общие Знания',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      }], {});
+    }
+
+    const questionGameOfThrones = await fs.readFile(path.join(process.env.PWD, 'db', 'themes', 'game of Thrones', 'question.txt'), 'utf-8');
+    const arrQuestionGameOfThrones = questionGameOfThrones.split('\n').filter((el) => el.length > 1);
+    const answerGameOfThrones = await fs.readFile(path.join(process.env.PWD, 'db', 'themes', 'game of Thrones', 'answer.txt'), 'utf-8');
+    const arrAnswerGameOfThrones = answerGameOfThrones.split('\n').filter((el) => el.length > 1);
+    for (let i = 0; i < arrQuestionGameOfThrones.length; i += 1) {
+      await queryInterface.bulkInsert('themes', [{
+        question: arrQuestionGameOfThrones[i],
+        answer: arrQuestionGameOfThrones[i],
+        theme_name: 'Игра Престолов',
         createdAt: new Date(),
         updatedAt: new Date(),
       }], {});
