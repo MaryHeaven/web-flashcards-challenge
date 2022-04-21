@@ -1,0 +1,24 @@
+<form id="start" action="/main" method="POST">
+  <fieldset disabled>
+    <legend>Приветствуем в нашей флеш-игрушкее</legend>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Расскажите нам как вас зовут, наш юный друг!</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Имечко">
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Выбери тему, чтобы поотвечать на вопросики!</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Выбор темы</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Can't check this
+        </label>
+      </div>
+    </div>
+    <button id="start" type="submit" class="btn btn-primary">Тема, я выбираю тебя</button>
+  </fieldset>
+</form>
