@@ -15,19 +15,19 @@ module.exports = (sequelize, DataTypes) => {
   }
   themes.init({
     theme_name: {
-      allowNull: false,
+      
       type: DataTypes.TEXT,
     },
     score_id: {
-      allowNull: false,
+      
       type: DataTypes.INTEGER,
     },
     question: {
-      allowNull: false,
+      
       type: DataTypes.TEXT,
     },
     answer: {
-      allowNull: false,
+      
       type: DataTypes.TEXT,
     },
   }, {

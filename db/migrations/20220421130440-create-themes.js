@@ -8,19 +8,19 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       theme_name: {
-        allowNull: false,
+        
         type: Sequelize.TEXT,
       },
       score_id: {
-        allowNull: false,
+        
         type: Sequelize.INTEGER,
       },
       question: {
-        allowNull: false,
+       
         type: Sequelize.TEXT,
       },
       answer: {
-        allowNull: false,
+        
         type: Sequelize.TEXT,
       },
       createdAt: {
