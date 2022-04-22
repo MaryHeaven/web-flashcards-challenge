@@ -4,7 +4,7 @@ const express = require('express');
 
 // routers
 const mainRouters = require('./routes/main.route');
-// const adminRouter = require('./routes/admin.route')
+const qestionRouter = require('./routes/qestion.route')
 
 // app && PORT
 const app = express();
@@ -14,7 +14,7 @@ const PORT = process.env.PORT ?? 3000;
 config(app);
 
 // routes
-// app.use('/', mainRouters);
+app.use('/qestion', qestionRouter);
 app.use('/', mainRouters);
 
 // listen

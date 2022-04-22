@@ -1,24 +1,22 @@
-<form id="start" action="/main" method="POST">
-  <fieldset disabled>
-    <legend>Приветствуем в нашей флеш-игрушкее</legend>
+<form class="form-floating mb-3" id="start" action="/main" method="POST">
+    <legend>Приветствуем в нашей флеш-игрушке</legend>
     <div class="mb-3">
-      <label for="disabledTextInput" class="form-label">Расскажите нам как вас зовут, наш юный друг!</label>
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="Имечко">
+<div class="row g-2">
+  <div class="col-md">
+    <div class="form-floating mb-3"> Назови мне своё имя
+      <input class="form-control" id="floatingInputGrid" placeholder="Олег" >
     </div>
-    <div class="mb-3">
-      <label for="disabledSelect" class="form-label">Выбери тему, чтобы поотвечать на вопросики!</label>
-      <select id="disabledSelect" class="form-select">
-        <option>Выбор темы</option>
+  </div>
+  <div class="col-md">
+        <option selected>Выбери тему, чтобы поотвечать на вопросики!</option>
+    <div class="form-floating mb-3">
+      <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
       </select>
     </div>
-    <div class="mb-3">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-        <label class="form-check-label" for="disabledFieldsetCheck">
-          Can't check this
-        </label>
-      </div>
-    </div>
-    <button id="start" type="submit" class="btn btn-primary">Тема, я выбираю тебя</button>
-  </fieldset>
+  </div>
+</div>
+<button type="button" class="btn btn-primary btn-lg">Начать игру > </button>
 </form>
