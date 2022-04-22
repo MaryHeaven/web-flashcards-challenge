@@ -1,8 +1,5 @@
 const start = document.querySelector('#start');
 const form = document.querySelector('#form1');
-const mainButton = document.querySelector('#mainButton').onclick = function () {
-  window.location.href = '/login';
-};
 
 // start.addEventListener('submit', (event) => {
 //   event.preventDefault();
