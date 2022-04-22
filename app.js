@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // npm
 const express = require('express');
 const config = require('./config');
@@ -17,7 +18,6 @@ const PORT = process.env.PORT ?? 3000;
 config(app);
 
 // routes
-app.use('/login', avtorReq);
 app.use('/qestion', qestionRouter);
 app.use('/', registrationReq);
 app.use('/main', mainRouters);

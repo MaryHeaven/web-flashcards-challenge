@@ -1,3 +1,5 @@
+/* eslint-disable no-multi-assign */
+/* eslint-disable no-unused-vars */
 const form = document.querySelector('#form1');
 const start = document.querySelector('#start');
 const mainButton = document.querySelector('#check').onclick = function () {

@@ -8,14 +8,20 @@
   /* display: flex; */
   /* justify-content: center; */
 }
+<<<<<<< HEAD
 
 #form1 {
   width: 50%;
+=======
+#avtor {
+  width: 100%;
+>>>>>>> 487e61d14fb98ac820ebf306b3aa4cd2a3bbc081
   padding-right: var(--bs-gutter-x,.75rem);
   padding-left: var(--bs-gutter-x,.75rem);
   margin-right: auto;
   margin-left: auto;
   margin-top: 60px;
+<<<<<<< HEAD
   /* display: flex; */
   /* justify-content: center; */
 }
@@ -37,4 +43,6 @@
 
 #qest {
   margin-top: 5%;
+=======
+>>>>>>> 487e61d14fb98ac820ebf306b3aa4cd2a3bbc081
 }
