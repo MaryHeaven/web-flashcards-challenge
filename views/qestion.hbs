@@ -1,11 +1,12 @@
-<form id="Themes_qestion" action="{{dataOne.dataValues.name}}/{{dataOne}}" method="POST">
+<form id="Themes_qestion" action="/" method="POST">
   <fieldset>
-      <div>Прошлый ответ {{flag}}</div>
+      <div>Прошлый ответ</div>
     <legend>Вопрос/ответ</legend>
-    <div class="mb-3">
+    <p class="mb-3">
       <label for="disabledTextInput" class="form-label">{{this.question}}</label>
-        {{dataOne.question}}
         <p>
+        {{dataOne.question}}
+        </p>
       <input name="answer" type="text" id="disabledTextInput" class="form-control" placeholder=...>
     </div>
     <button id="link" type="submit">NEXT</button>

@@ -1,13 +1,15 @@
-const start = document.querySelector('#start');
 const form = document.querySelector('#form1');
-const mainButton = document.querySelector('#mainButton').onclick = function () {
-  window.location.href = '/login';
+const start = document.querySelector('#start');
+const mainButton = document.querySelector('#check').onclick = function () {
+  window.location.href = 'main';
 };
+
+// const questionButton = document.querySelector('#next_questions').onclick = function () {
+//   window.location.href = 'question';
+// };
 
 // start.addEventListener('submit', (event) => {
 //   event.preventDefault();
-
-// });
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();

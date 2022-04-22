@@ -1,5 +1,5 @@
 #start {
-  width: 100%;
+  width: 50%;
   padding-right: var(--bs-gutter-x,.75rem);
   padding-left: var(--bs-gutter-x,.75rem);
   margin-right: auto;
@@ -7,4 +7,19 @@
   margin-top: 60px;
   /* display: flex; */
   /* justify-content: center; */
+}
+
+#form1 {
+  width: 50%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+#link {
+  margin-top: 15%;
 }
