@@ -9,6 +9,7 @@ const mainButton = document.querySelector('#check').onclick = function () {
 //   window.location.href = 'question';
 // };
 
+
 // start.addEventListener('submit', (event) => {
 //   event.preventDefault();
 
