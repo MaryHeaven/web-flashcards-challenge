@@ -2,8 +2,8 @@ const router = require('express').Router()
 
 router.route('/')
   .get((req, res) => {
-    console.log('zahody');
-    res.render('qestion');
+    console.log('zaashla');
+    res.render('static');
   });
 
 module.exports = router;
