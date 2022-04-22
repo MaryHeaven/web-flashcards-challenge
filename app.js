@@ -2,7 +2,7 @@
 const config = require('./config');
 const express = require('express');
 const registrationReq = require('./routes/registr')
-const avtorReq = require('./routes/avtor')
+const avtorReq = require('./routes/avtor')  
 
 // routers
 const mainRouters = require('./routes/main.route');

@@ -14,8 +14,6 @@ form.addEventListener('submit', async (event) => {
   const {
     login, password, action, method,
   } = event.target;
-  console.log(login, password);
-
   const response = await fetch(action, {
     method,
     headers: { 'Content-Type': 'application/json' },

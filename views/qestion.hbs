@@ -1,12 +1,13 @@
-<div class="mb-3 row" id="qestion" action="/qestion" method="POST">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+<form id="Themes_qestion" action="{{dataOne.dataValues.name}}/{{dataOne}}" method="POST">
+  <fieldset>
+      <div>Прошлый ответ {{flag}}</div>
+    <legend>Вопрос/ответ</legend>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">{{this.question}}</label>
+        {{dataOne.question}}
+        <p>
+      <input name="answer" type="text" id="disabledTextInput" class="form-control" placeholder=...>
     </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword">
-    </div>
-  </div>
+    <button id="link" type="submit">NEXT</button>
+  </fieldset>
+</form>
