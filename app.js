@@ -6,7 +6,7 @@ const avtorReq = require('./routes/avtor')
 
 // routers
 const mainRouters = require('./routes/main.route');
-const qestionRouter = require('./routes/qestion.route')
+const qestionRouter = require('./routes/qestion.route');
 
 // app && PORT
 const app = express();
@@ -17,8 +17,8 @@ config(app);
 
 // routes
 app.use('/qestion', qestionRouter);
-app.use('/', mainRouters);
-app.use('/registration', registrationReq);
+app.use('/', registrationReq);
+app.use('/main', mainRouters);
 app.use('/login', avtorReq);
 
 
