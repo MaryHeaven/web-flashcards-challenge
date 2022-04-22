@@ -1,5 +1,12 @@
+#body {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  display: flex;
+  justify-content: center;
+
+}
+
 #start {
-  width: 100%;
+  width: 50%;
   padding-right: var(--bs-gutter-x,.75rem);
   padding-left: var(--bs-gutter-x,.75rem);
   margin-right: auto;
@@ -8,11 +15,43 @@
   /* display: flex; */
   /* justify-content: center; */
 }
-#avtor {
-  width: 100%;
+
+#form1 {
+  width: 50%;
   padding-right: var(--bs-gutter-x,.75rem);
   padding-left: var(--bs-gutter-x,.75rem);
   margin-right: auto;
   margin-left: auto;
   margin-top: 60px;
+}
+
+#link {
+  margin-top: 15%;
+}
+
+#qests {
+  width: 50%;
+  display:block;
+  justify-content: center center; 
+  margin-top: 25%;
+  margin-left: 25%;
+}
+
+#butt {
+  margin-top: 2%;
+}
+
+#qest {
+  width: 50%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+ 
+
+}
+#questions {
+  margin-top: 2%;
+
 }

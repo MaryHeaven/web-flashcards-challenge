@@ -1,4 +1,6 @@
+
 const { User } = require('../db/models');
+
 const router = require('express').Router();
 // const {}
 router.get('/', (req, res) => {
@@ -11,6 +13,7 @@ router.get('/', (req, res) => {
 // });
 router.post('/regs', async (req, res) => {
   const { login, password } = req.body;
+
   const login1 = await User.findAll({ where: { user_name: login } });
   // console.log(login, password);
   // if (!login || !password) {

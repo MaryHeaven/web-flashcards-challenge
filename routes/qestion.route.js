@@ -1,3 +1,4 @@
+
 const router = require('express').Router();
 const { Theme } = require('../db/models');
 
@@ -10,6 +11,12 @@ router.route('/')
   
     console.log(thirdQues);
     res.render('/qestion');
+
   });
+  
+  router.post('/', (req, res) => {
+    res.render('question');
+  })
+
 
 module.exports = router;
