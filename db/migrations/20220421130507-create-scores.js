@@ -8,16 +8,21 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       score: {
-        allowNull: false,
         type: Sequelize.TEXT,
       },
       theme_id: {
-        allowNull: false,
         type: Sequelize.INTEGER,
+        references: {
+          model: 'themes',
+          key: 'id',
+        },
       },
       user_id: {
-        allowNull: false,
         type: Sequelize.INTEGER,
+        references: {
+          model: 'users',
+          key: 'id',
+        },
       },
       createdAt: {
         allowNull: false,

@@ -8,19 +8,15 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       theme_name: {
-        
         type: Sequelize.TEXT,
       },
       score_id: {
-        
         type: Sequelize.INTEGER,
       },
       question: {
-       
         type: Sequelize.TEXT,
       },
       answer: {
-        
         type: Sequelize.TEXT,
       },
       createdAt: {
