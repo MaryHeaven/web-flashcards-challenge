@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/regs', (req, res) => {
-    const {login, password} = req.body;
-    console.log(login, password);
-})
+  const { login, password } = req.body;
+  console.log(login, password);
+});
 module.exports = router;
