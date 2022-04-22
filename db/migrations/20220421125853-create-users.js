@@ -6,13 +6,12 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
-        // references: {
-        //   model: 'themes',
-        //   key: 'id',
-        // },
       },
       user_name: {
         type: Sequelize.TEXT,
+      },
+      password: {
+        type: Sequelize.INTEGER,
       },
       createdAt: {
         allowNull: false,

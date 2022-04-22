@@ -14,20 +14,24 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   scores.init({
+    id: {
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER,
+    },
     score: {
       allowNull: false,
       type: DataTypes.TEXT,
     },
     theme_id: {
-      allowNull: false,
       type: DataTypes.INTEGER,
-      // references: {
-      //   model: 'themes',
-      //   key: 'id',
-      // },
+      references: {
+        model: 'themes',
+        key: 'id',
+      },
     },
     user_id: {
-      allowNull: false,
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
