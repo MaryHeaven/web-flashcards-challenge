@@ -1,6 +1,7 @@
 const start = document.querySelector('#start');
 const form = document.querySelector('#form1');
 
+
 // start.addEventListener('submit', (event) => {
 //   event.preventDefault();
 
