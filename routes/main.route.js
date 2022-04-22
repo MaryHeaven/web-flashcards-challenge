@@ -8,5 +8,9 @@ router.get('/', (req, res) => {
 router.post('/main', (req, res) => {
   const { themes } = req.body;
 });
+router.post('/registration', (req, res) => {
+  const { themes } = req.body;
+  
+});
 
 module.exports = router;

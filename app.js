@@ -18,7 +18,7 @@ const PORT = process.env.PORT ?? 3000;
 config(app);
 
 // routes
-app.use('/qestion', qestionRouter);
+app.use('/question', qestionRouter);
 app.use('/', registrationReq);
 app.use('/main', mainRouters);
 app.use('/static', staticRouter);

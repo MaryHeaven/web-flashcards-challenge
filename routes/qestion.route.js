@@ -7,8 +7,13 @@ router.route('/')
     const x = await Theme.findAll({ raw: true, attributes: ['question'] });
     const arr = [];
     // console.log(x);
-    res.render('/qestion');
+    res.render('/question');
   });
+  
+  router.post('/', (req, res) => {
+    res.render('question');
+  })
+
 
 module.exports = router;
 
