@@ -6,21 +6,25 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
+        // references: {
+        //   model: 'users',
+        //   key: 'theme_id',
+        // },
       },
       theme_name: {
-        
+
         type: Sequelize.TEXT,
       },
       score_id: {
-        
+
         type: Sequelize.INTEGER,
       },
       question: {
-       
+
         type: Sequelize.TEXT,
       },
       answer: {
-        
+
         type: Sequelize.TEXT,
       },
       createdAt: {
