@@ -1,17 +1,23 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('User', {
+    await queryInterface.createTable('Themes', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      user_name: {
+      theme_name: {
         type: Sequelize.TEXT,
       },
-      password: {
+      score_id: {
         type: Sequelize.INTEGER,
+      },
+      question: {
+        type: Sequelize.TEXT,
+      },
+      answer: {
+        type: Sequelize.TEXT,
       },
       createdAt: {
         allowNull: false,
@@ -24,6 +30,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('User');
+    await queryInterface.dropTable('Themes');
   },
 };

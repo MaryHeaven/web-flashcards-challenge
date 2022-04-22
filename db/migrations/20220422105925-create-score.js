@@ -1,6 +1,6 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Score', {
+    await queryInterface.createTable('Scores', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -8,19 +8,19 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       score: {
-        type: Sequelize.TEXT,
+        type: Sequelize.INTEGER,
       },
       theme_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Theme',
+          model: 'Themes',
           key: 'id',
         },
       },
       user_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'User',
+          model: 'Users',
           key: 'id',
         },
       },
@@ -35,6 +35,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Score');
+    await queryInterface.dropTable('Scores');
   },
 };
